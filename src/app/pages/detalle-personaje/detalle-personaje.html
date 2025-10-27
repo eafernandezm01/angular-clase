@@ -1,6 +1,9 @@
 <div class="datos-personaje">
     <p>Nombre del personaje: {{ personaje.nombre }}</p>
-    <p>Nivel: {{personaje.nivel}}</p>
+    <p>Nivel: {{ personaje.nivel }}</p>
     <p>Tipo personaje: {{ personaje.tipo }}</p>
-    <p>Vida: {{personaje.vida}}</p>
+    <p>Vida: {{ personaje.vida }}</p>
+
+    <img [src]="personaje.imagen" alt="Imagen de gandalf">
+    <button type="button" [disabled]="personaje.vida > 0" class="btn btn-primary">Resucitar</button>
 </div>

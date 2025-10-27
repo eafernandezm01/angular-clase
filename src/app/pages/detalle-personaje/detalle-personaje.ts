@@ -13,7 +13,8 @@ export class DetallePersonaje {
     nombre: 'Gandalf',
     nivel: 70,
     tipo: TIPO_PESONAJE.mago,
-    vida: 100
+    vida: 0,
+    imagen: './gandalf.png'
   }
 
   constructor (){

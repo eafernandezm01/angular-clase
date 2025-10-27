@@ -10,5 +10,6 @@ export interface IPersonaje{
     nivel: number;
     tipo: TIPO_PESONAJE;
     habilidad?: string[];
-    vida: number
+    vida: number;
+    imagen: string;
 }
