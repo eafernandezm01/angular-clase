@@ -1,8 +1,8 @@
 export enum TIPO_PESONAJE{
-    mago,
-    guerrero,
-    arquero,
-    druida
+    mago = 'Mago',
+    guerrero = 'Guerrero',
+    arquero = 'Arquero',
+    druida = 'Druida'
 }
 
 export interface IPersonaje{
