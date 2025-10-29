@@ -1,19 +1,19 @@
-.datos-personaje{
-    margin: 2% auto;
-    padding: 2%;
-    border: 2px solid #337eda;
-    width: 45%;
-    text-align: center;
+.datos-personaje {
+  margin: 2% auto;
+  padding: 2%;
+  border: 2px solid #337eda;
+  width: 45%;
+  text-align: center;
 }
 
-.div-botones{
-    padding-top: 2%;
+.div-botones {
+  padding-top: 2%;
 }
 
-.div-botones > button{
-    margin: 0 4px;
+.div-botones > button {
+  margin: 0 4px;
 }
 
-img{
-    max-width: 30%;
+img {
+  max-width: 30%;
 }
