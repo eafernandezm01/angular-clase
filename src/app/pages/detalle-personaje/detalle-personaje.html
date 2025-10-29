@@ -4,6 +4,13 @@
     <p>Tipo personaje: {{ personaje.tipo }}</p>
     <p>Vida: {{ personaje.vida }}</p>
 
-    <img [src]="personaje.imagen" alt="Imagen de gandalf">
-    <button type="button" [disabled]="personaje.vida > 0" class="btn btn-primary">Resucitar</button>
+    <img [src]="personaje.imagen" alt="Imagen de gandalf">  
+    <div class="div-botones">
+        <button type="button" [disabled]="personaje.vida > 0" (click)="resucitar()"
+            class="btn btn-success">Resucitar</button>
+        <button type="button" [disabled]="personaje.vida == 0" (click)="matar()" 
+            class="btn btn-danger">Matar</button>
+        <button type="button" [disabled]="personaje.vida == 0" (click)="hacerPupa()" 
+            class="btn btn-warning">Hacer daño</button>
+    </div>
 </div>

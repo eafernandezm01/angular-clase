@@ -5,3 +5,15 @@
     width: 45%;
     text-align: center;
 }
+
+.div-botones{
+    padding-top: 2%;
+}
+
+.div-botones > button{
+    margin: 0 4px;
+}
+
+img{
+    max-width: 30%;
+}
