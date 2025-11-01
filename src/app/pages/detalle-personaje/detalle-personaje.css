@@ -17,3 +17,28 @@
 img {
   max-width: 30%;
 }
+
+
+span{
+  font-weight: bolder;
+}
+
+.rojo{
+  color: red;
+}
+
+.naranja{
+  color: rgb(249, 105, 53);
+}
+
+.amarillo{
+  color: gold;
+}
+
+.verde-claro{
+  color: rgb(63, 237, 63);
+}
+
+.verde-oscuro{
+  color: green;
+}
