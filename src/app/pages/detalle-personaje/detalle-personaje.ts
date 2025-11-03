@@ -23,6 +23,6 @@ export class DetallePersonaje {
       nivel: 40,
       tipo: TIPO_PESONAJE.druida,
       vida: 100,
-      imagen: './gandalf.png',
+      imagen: './ladybug.webp',
     };
 }
