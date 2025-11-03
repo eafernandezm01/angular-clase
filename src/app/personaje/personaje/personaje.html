@@ -1,0 +1,20 @@
+<div class="datos-personaje">
+    <p>Nombre del personaje: {{ personaje.nombre }}</p>
+    <p>Nivel: {{ personaje.nivel }}</p>
+    <p>Tipo personaje: {{ personaje.tipo }}</p>
+    <p>Vida: <span [class]="getClassVida()">{{ personaje.vida }}</span></p>
+
+    <img [src]="personaje.imagen" alt="Imagen de gandalf">  
+    <div class="div-botones">
+        <button type="button" [disabled]="personaje.vida > 0" (click)="resucitar()"
+            class="btn btn-success">Resucitar</button>
+        <button type="button" [disabled]="personaje.vida === 0" (click)="matar()" 
+            class="btn btn-danger">Matar</button>
+        <button type="button" [disabled]="personaje.vida === 0" (click)="hacerPupa()" 
+            class="btn btn-warning">Hacer daño</button>
+        <button type="button" 
+        [disabled]="personaje.vida === 0  || personaje.vida === topeVida" 
+        (click)="sanar()" 
+            class="btn btn-primary">Sanar</button>
+    </div>
+</div>
