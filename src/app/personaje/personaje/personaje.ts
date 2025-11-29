@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TOPE_VIDA, IPersonaje, TIPO_PESONAJE } from '../../interfaces/IPersonaje';
+import { TOPE_VIDA, IPersonaje } from '../../interfaces/IPersonaje';
 
 @Component({
   selector: 'app-personaje',
