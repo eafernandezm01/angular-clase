@@ -1,0 +1,19 @@
+<div>
+    <h3>Soy tu padre</h3>
+
+    <h5>Listado de hijos</h5>
+    @for (descendiente of listDescendientes; track descendiente) {
+      <app-hijo [nombre]="descendiente" (llamadaPerdida)="procesarLlamada ($event)"></app-hijo>
+    }
+
+
+    <h5>Listado de llamadas de los hijos</h5>
+    @if (listLlamadas.length === 0){
+        <p>No tiene llamadas</p>
+    } @else {
+        <p>Me ha llamado:</p>
+       @for (llamada of listLlamadas; track llamada) {
+         <p>{{llamada}}</p>
+       }
+    }
+</div>
